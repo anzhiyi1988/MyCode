@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+    <server>
+        <nid>1</nid>
+        <cname>我的测试服务器</cname>
+        <cip>192.168.56.109</cip>
+        <user>root</user>
+        <passwd>@163.com</passwd>
+        <apps>
+            <app>
+                <nid>2</nid>
+                <cname>测试应用abase</cname>
+                <cport>5432</cport>
+                <cstartcmd></cstartcmd>
+                <cstopcmd></cstopcmd>
+                <crestartcmd></crestartcmd>
+            </app>
+            <app>
+                <nid>3</nid>
+                <cname>测试应用redis</cname>
+                <cport>6379</cport>
+                <cstartcmd></cstartcmd>
+                <cstopcmd></cstopcmd>
+                <crestartcmd></crestartcmd>
+            </app>
+        </apps>
+    </server>
+</servers>

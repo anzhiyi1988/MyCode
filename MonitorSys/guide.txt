@@ -1,0 +1,13 @@
+http://localhost:8080/monitor/ctrl.do/serv/list
+
+http://localhost:8080/monitor/ctrl.do/app/list
+
+
+
+http://localhost:8080/monitor/ctrl.do/monitor/init
+http://localhost:8080/monitor/ctrl.do/monitor/reload
+http://localhost:8080/monitor/ctrl.do/monitor/begin
+http://localhost:8080/monitor/ctrl.do/monitor/list/id?fkid=1
+
+
+http://localhost:8080/monitor/monitor/monitor.html

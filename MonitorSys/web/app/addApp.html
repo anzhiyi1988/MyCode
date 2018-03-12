@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>添加应用</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../common/js/angular.min.js"></script>
+<script type="text/javascript" src="../common/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../common/js/global.js"></script>
+<script type="text/javascript" src="js/addApp.js"></script>
+<script type="text/javascript" src="../serv/js/servList.js"></script>
+<script type="text/javascript" src="../proj/js/projList.js"></script>
+</head>
+<body ng-app="appApp" ng-controller="appCtrl">
+	<h2>添加应用</h2>
+	<table border="1">
+		<tr>
+			<td>服务器ID:</td>
+			<!-- <td><input type ="text" id="cservid" name="cservid" /></td> -->
+			<td><select id="cservid" name="cservid"
+				ng-repeat="serv in servList">
+					<option value="{{serv.cid}}">{{serv.cname}}({{serv.cip}})</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>项目ID:</td>
+			<td><select id="cprojid" name="cprojid"
+                ng-repeat="proj in projList">
+                    <option value="{{proj.cid}}">{{proj.cname}}</option>
+            </select></td>
+		</tr>
+		<tr>
+			<td>应用名称:</td>
+			<td><input type="text" id="cname" name="cname" /></td>
+		</tr>
+		<tr>
+			<td>应用路径:</td>
+			<td><input type="text" id="cpath" name="cpath" /></td>
+		</tr>
+		<tr>
+			<td>部署负责人:</td>
+			<td><input type="text" id="cbsfzr" name="cbsfzr" /></td>
+		</tr>
+		<tr>
+			<td>部署负责人电话:</td>
+			<td><input type="text" id="cbsfzrdh" name="cbsfzrdh" /></td>
+		</tr>
+		<tr>
+			<td>监控端口:</td>
+			<td><input type="text" id="cport" name="cport" /> 主要是jvm的监控端口</td>
+		</tr>
+		<tr>
+			<td>Cpu占用:</td>
+			<td><input type="text" id="ccpuzy" name="ccpuzy" /></td>
+		</tr>
+		<tr>
+			<td>内存占用:</td>
+			<td><input type="text" id="cramzy" name="cramzy" /></td>
+		</tr>
+		<tr>
+			<td>磁盘占用:</td>
+			<td><input type="text" id="cdiskzy" name="cdiskzy" /></td>
+		</tr>
+		<tr>
+			<td>存储占用:</td>
+			<td><input type="text" id="cstorezy" name="cstorezy" /></td>
+		</tr>
+		<tr>
+			<td>备注说明:</td>
+			<td><input type="text" id="cbzsm" name="cbzsm" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="button"
+				onclick="submit()" value="提交" /></td>
+		</tr>
+	</table>
+</body>
+</html>

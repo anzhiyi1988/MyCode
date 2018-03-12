@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>服务器列表</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../common/js/angular.min.js"></script>
+<script type="text/javascript" src="../common/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../common/js/global.js"></script>
+<script type="text/javascript" src="js/servList.js"></script>
+</head>
+<body>
+	<h2>服务器列表：</h2>
+	<div ng-app="servApp">
+		<div ng-controller="servCtrl">
+			<dl>
+				<div ng-repeat="serv in servList">
+					<dt>
+						{{serv.cname}}({{serv.cip }})
+						<button onclick="isShow('{{serv.cid}}')">配置详情^_^</button>
+						<button onclick="showAppList('{{serv.cid}}')">部署详情^_^</button>
+					</dt>
+					<dd style="display:none" id="{{serv.cid}}">
+						<ul>
+							<li>服务器类型:{{serv.cfwqlx }}</li>
+							<li>操作系统 :{{serv.cczxt }}</li>
+							<li>CPU核数 :{{serv.ccpu }}</li>
+							<li>内存大小 :{{serv.cram }}</li>
+							<li>磁盘大小 :{{serv.cdisk }}</li>
+							<li>存储大小 :{{serv.cstore }}</li>
+							<li>网络带宽 :{{serv.cnet }}</li>
+						</ul>
+					</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

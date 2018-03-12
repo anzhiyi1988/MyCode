@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>应用列表</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../common/js/angular.min.js"></script>
+<script type="text/javascript" src="../common/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../common/js/global.js"></script>
+<script type="text/javascript" src="js/appList.js"></script>
+</head>
+<body>
+	<h2>应用列表：</h2>
+	<div ng-app="appApp">
+		<div ng-controller="appCtrl">
+			<dl>
+				<div ng-repeat="app in appList">
+					<dt>
+						{{app.cname}}({{app.cpath}})
+						<button onclick="isShow('{{app.cid}}')">配置详情^_^</button>
+					</dt>
+					<dd style="display:none" id="{{app.cid}}">
+						<ul>
+							<li>服务器ID :{{app.cservid }}</li>
+							<li>所在服务器 :{{app.cservid }}</li>
+							<li>项目ID :{{app.cprojid }}</li>
+							<li>所属项目 :{{app.cprojid }}</li>
+							<li>应用名称 :{{app.cname }}</li>
+							<li>部署路径 :{{app.cpath }}</li>
+							<li>部署负责人 :{{app.cbsfzr }}</li>
+							<li>部署负责人电话 :{{app.cbsfzrdh }}</li>
+							<li>监控端口 :{{app.cport }}</li>
+							<li>Cpu占用 :{{app.ccpuzy }}</li>
+							<li>内存占用 :{{app.cramzy }}</li>
+							<li>磁盘占用 :{{app.cdiskzy }}</li>
+							<li>存储占用 :{{app.cstorezy }}</li>
+							<li>备注说明 :{{app.cbzsm }}</li>
+
+						</ul>
+					</dd>
+				</div>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

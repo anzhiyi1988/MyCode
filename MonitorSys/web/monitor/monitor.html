@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>监控列表</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../common/js/angular.min.js"></script>
+<script type="text/javascript" src="../common/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../common/js/global.js"></script>
+<script type="text/javascript" src="../common/js/echarts.js"></script>
+<script type="text/javascript" src="js/monitor.js"></script>
+
+</head>
+<body>
+    <h2>监控列表：</h2>
+    <div ng-app="monitorApp">
+        <div ng-controller="monitorCtrl">
+            <div ng-repeat="serv in servList">
+                <div>{{serv.nid}}({{serv.cip }})</div>
+
+                <div id="{{serv.nid}}">这里是心跳</div>
+                <div ng-repeat="app in appList |filter : {nserverid:serv.nid} ">
+                    <div>{{app.nid}} {{app.nserverid}}</div>
+                    <div id="{{app.nid}}">这里是心跳</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" style="width: 600px;height:400px;"></div>
+
+    <script type="text/javascript" src="js/data.js"></script>
+</body>
+</html>

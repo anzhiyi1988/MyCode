@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>知识库</title>
+<link type="text/css" href="css/index.css" rel="stylesheet" />
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		<h2>开发手册</h2>
+	</header>
+	<nav>
+		<h4>服务器</h4>
+		<ul>
+			<li onclick="boom('env/server.html')">最高开发服务器现状</li>
+		</ul>
+		<h4>开发规范</h4>
+		<ul>
+			<li onclick="boom('guifan/devenv.html')">架构规范</li>
+			<li onclick="boom('guifan/java.html')">java规范</li>
+			<li onclick="boom('guifan/sql.html')">sql规范</li>
+			<li onclick="boom('guifan/maven.html')">maven规范</li>
+		</ul>
+	</nav>
+	<section>
+		<iframe id="iframe-context" src="guifan/java.html" width="100%"
+			onload="setHeight()" frameborder="0" scrolling="0"></iframe>
+	</section>
+	<footer> 作者：安致宜 </footer>
+</body>
+</html>
