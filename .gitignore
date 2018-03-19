@@ -1,0 +1,12 @@
+/springboot/.idea
+/springboot/springboot-first/.idea
+/springboot/springboot-first/target
+/maven/DownMaven/.idea
+/maven/DownMaven/.settings
+/maven/DownMaven/target
+/MonitorSys/.settings
+/MonitorSys/target
+MANIFEST.MF
+.classpath
+.project
+*.iml
