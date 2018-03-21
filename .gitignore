@@ -10,3 +10,4 @@ MANIFEST.MF
 .classpath
 .project
 *.iml
+/springcloud/.idea
