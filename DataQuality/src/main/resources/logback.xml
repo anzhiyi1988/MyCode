@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+    <property name="LOG_HOME" value="./logs"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%-5thread] %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_STDOUT"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>info</level>
+        </filter>
+        <File>${LOG_HOME}/app_stdout.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/app_stdout.%d{yyyy-MM-dd}.log
+            </FileNamePattern>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level][%-5thread]%logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE-ERROR"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>error</level>
+        </filter>
+        <File>${LOG_HOME}/app_stderr.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/app_stderr.%d{yyyy-MM-dd}.log
+            </FileNamePattern>
+            <maxHistory>20</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level][%-5thread]%logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE-JDBC"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/app_jdbc.log</File>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level][%-5thread]%logger{20} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/app_jdbc.%d{yyyy-MM-dd}.log
+            </fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="jdbc.sqltiming" level="WARN" additivity="false">
+        <appender-ref ref="FILE-JDBC"/>
+    </logger>
+    <logger name="jdbc.sqlonly" level="error" additivity="false">
+        <appender-ref ref="FILE-JDBC"/>
+    </logger>
+    <logger name="jdbc.audit" level="error" additivity="false">
+        <appender-ref ref="FILE-JDBC"/>
+    </logger>
+    <logger name="jdbc.resultset" level="error" additivity="false">
+        <appender-ref ref="FILE-JDBC"/>
+    </logger>
+    <logger name="jdbc.connection" level="error" additivity="false">
+        <appender-ref ref="FILE-JDBC"/>
+    </logger>
+    <logger name="jdbc.resultsettable" level="error" additivity="false">
+        <appender-ref ref="FILE-JDBC"/>
+    </logger>
+
+    <logger name="org.springframework.beans.factory.xml" level="error"/>
+    <logger name="com.thunisoft.summer.component.ssoclient.filter" level="error"/>
+    <logger name="com.thunisoft.artery.service.theme.build.BuildCss" level="error"/>
+    <logger name="com.thunisoft.artery.form.formlib.cache.FormlibSummerCache" level="error"/>
+    <logger name="com.thunisoft.summer.util.cache.CacheProxy" level="error"/>
+    <logger name="com.thunisoft.artery.plugin.form.FaKindEditor" level="error"/>
+    <logger name="org.springframework.beans.factory.support.DefaultListableBeanFactory" level="error"/>
+    <logger name="org.apache.struts.action.ActionMapping" level="error"/>
+    <logger name="org.apache.commons.validator.ValidatorResources" level="error"/>
+    <root>
+        <level value="info"/>
+        <appender-ref ref="FILE-ERROR"/>
+        <appender-ref ref="FILE_STDOUT"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
