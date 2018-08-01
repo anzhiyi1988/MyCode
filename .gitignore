@@ -13,3 +13,5 @@ MANIFEST.MF
 /springcloud/.idea
 target
 
+.idea
+logs
