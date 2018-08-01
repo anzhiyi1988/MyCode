@@ -60,11 +60,11 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>9.2-1002.jdbc4</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>postgresql</groupId>-->
+            <!--<artifactId>postgresql</artifactId>-->
+            <!--<version>9.2-1002.jdbc4</version>-->
+        <!--</dependency>-->
 
     </dependencies>
 
@@ -99,6 +99,42 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.6</version>
             </plugin>
+
+            <!-- maven 打包成可执行jar 文件 plugin start -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.thunisoft.data.quality.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- 拷贝依赖的jar包到${project.build.directory}\lib目录 ${project.build.directory}缺省为target目录 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${project.build.directory}/lib
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- maven 打包成可执行jar 文件 plugin end -->
         </plugins>
     </build>
 
