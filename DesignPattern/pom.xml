@@ -9,6 +9,7 @@
     <version>1.0</version>
     <modules>
         <module>01base</module>
+        <module>02singleton</module>
     </modules>
 
 
