@@ -1,0 +1,26 @@
+.TransverseLine {
+    position: absolute;
+    height: 2px;
+    background: #a0c0e4;
+    display: block;
+}
+
+.VerticalLine {
+    display: block;
+    position: absolute;
+    width: 2px;
+    background: #86afde;
+}
+
+.panel {
+    border: 2px solid red;
+    position: absolute;
+}
+
+.Person {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background: darkseagreen;
+}
