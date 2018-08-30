@@ -1,0 +1,276 @@
+{
+    "code": 200,
+    "data": {
+        "cbh": "36adea91a3c6b6ca8f6cbdb33abcd003",
+        "children": [],
+        "common": false,
+        "cxm": "李大坑",
+        "czjhm": "110000198801013016",
+        "edges": [],
+        "fathers": [
+            {
+                "call": "父亲",
+                "cbh": "36adea91a3c6b6ca8f6cbdb33abcd001",
+                "children": [],
+                "common": false,
+                "cxm": "李巨坑",
+                "czjhm": "110000196301013013",
+                "edges": [
+                    {
+                        "cgxmc": "父亲",
+                        "fromName": "李巨坑",
+                        "ngxbh": 51,
+                        "ngxlydw": 1012,
+                        "ngxzxd": 0,
+                        "nsfqr": 2,
+                        "nsfzx": 1,
+                        "toName": "李大坑"
+                    }
+                ],
+                "fathers": [
+                    {
+                        "call": "祖父",
+                        "cbh": "36adea91a3c6b6ca8f6cbdb33abcd006",
+                        "children": [],
+                        "common": false,
+                        "cxm": "李天坑",
+                        "czjhm": "130100194001013012",
+                        "edges": [
+                            {
+                                "cgxmc": "父亲",
+                                "fromName": "李天坑",
+                                "ngxbh": 51,
+                                "ngxlydw": 1013,
+                                "ngxzxd": 0,
+                                "nsfqr": 2,
+                                "nsfzx": 1,
+                                "toName": "李巨坑"
+                            },
+                            {
+                                "cgxmc": "父亲",
+                                "fromName": "李天坑",
+                                "ngxbh": 51,
+                                "ngxlydw": 1012,
+                                "ngxzxd": 0,
+                                "nsfqr": 2,
+                                "nsfzx": 1,
+                                "toName": "李巨坑"
+                            }
+                        ],
+                        "fathers": [],
+                        "grantChildren": [],
+                        "grantFathers": [],
+                        "grantMothers": [],
+                        "gxPath": "1|51|51",
+                        "mothers": [],
+                        "nxb": 1,
+                        "nxl": -1,
+                        "nzjlx": 100,
+                        "siblings": [],
+                        "spouses": []
+                    }
+                ],
+                "grantChildren": [],
+                "grantFathers": [],
+                "grantMothers": [],
+                "gxPath": "1|51",
+                "mothers": [],
+                "nxb": 1,
+                "nxl": -1,
+                "nzjlx": 100,
+                "siblings": [],
+                "spouses": [
+                    {
+                        "call": "母亲",
+                        "cbh": "36adea91a3c6b6ca8f6cbdb33abcd002",
+                        "children": [],
+                        "common": false,
+                        "cxm": "张翠花",
+                        "czjhm": "220000196302013024",
+                        "edges": [
+                            {
+                                "cgxmc": "夫",
+                                "fromName": "李巨坑",
+                                "ngxbh": 11,
+                                "ngxlydw": 1012,
+                                "ngxzxd": 0,
+                                "nsfqr": 2,
+                                "nsfzx": 1,
+                                "toName": "张翠花"
+                            },
+                            {
+                                "cgxmc": "夫",
+                                "fromName": "李巨坑",
+                                "ngxbh": 11,
+                                "ngxlydw": 1013,
+                                "ngxzxd": 0,
+                                "nsfqr": 2,
+                                "nsfzx": 1,
+                                "toName": "张翠花"
+                            },
+                            {
+                                "cgxmc": "母亲",
+                                "fromName": "张翠花",
+                                "ngxbh": 52,
+                                "ngxlydw": 1013,
+                                "ngxzxd": 0,
+                                "nsfqr": 2,
+                                "nsfzx": 1,
+                                "toName": "李大坑"
+                            }
+                        ],
+                        "fathers": [],
+                        "grantChildren": [],
+                        "grantFathers": [],
+                        "grantMothers": [],
+                        "gxPath": "1|51|12",
+                        "mothers": [],
+                        "nxb": 2,
+                        "nxl": -1,
+                        "nzjlx": 100,
+                        "siblings": [],
+                        "spouses": []
+                    }
+                ]
+            }
+        ],
+        "grantChildren": [
+            {
+                "cxm": "孙1",
+                "spouses": [
+                    {
+                        "cxm": "孙1妻1"
+                    },
+                    {
+                        "cxm": "孙1妻1"
+                    }
+                ]
+            },
+            {
+                "cxm": "孙2",
+                "spouses": [
+                    {
+                        "cxm": "孙2妻1"
+                    }
+                ]
+            },
+            {
+                "cxm": "孙3",
+                "spouses": [
+                    {
+                        "cxm": "孙3妻1"
+                    },
+                    {
+                        "cxm": "孙3妻1"
+                    }
+                ]
+            }
+        ],
+        "grantFathers": [],
+        "grantMothers": [],
+        "gxPath": "1",
+        "mothers": [],
+        "nnl": 30,
+        "nxb": 1,
+        "nxl": -1,
+        "nzjlx": 100,
+        "siblings": [],
+        "spouses": [
+            {
+                "call": "妻",
+                "cbh": "36adea91a3c6b6ca8f6cbdb33abcd007",
+                "children": [
+                    {
+                        "call": "子",
+                        "cbh": "36adea91a3c6b6ca8f6cbdb33abcd004",
+                        "children": [],
+                        "common": true,
+                        "cxm": "李小坑",
+                        "czjhm": "110000201801013018",
+                        "edges": [
+                            {
+                                "cgxmc": "母亲",
+                                "fromName": "王晓梅",
+                                "ngxbh": 52,
+                                "ngxlydw": 1013,
+                                "ngxzxd": 0,
+                                "nsfqr": 2,
+                                "nsfzx": 1,
+                                "toName": "李小坑"
+                            },
+                            {
+                                "cgxmc": "父亲",
+                                "fromName": "李大坑",
+                                "ngxbh": 51,
+                                "ngxlydw": 1012,
+                                "ngxzxd": 0,
+                                "nsfqr": 2,
+                                "nsfzx": 1,
+                                "toName": "李小坑"
+                            }
+                        ],
+                        "fathers": [],
+                        "grantChildren": [],
+                        "grantFathers": [],
+                        "grantMothers": [],
+                        "gxPath": "1|12|20",
+                        "mothers": [],
+                        "nxb": 1,
+                        "nxl": -1,
+                        "nzjlx": 100,
+                        "siblings": [],
+                        "spouses": []
+                    }
+                ],
+                "common": false,
+                "cxm": "王晓梅",
+                "czjhm": "120000198802013024",
+                "edges": [
+                    {
+                        "cgxmc": "夫",
+                        "fromName": "李大坑",
+                        "ngxbh": 11,
+                        "ngxlydw": 1012,
+                        "ngxzxd": 0,
+                        "nsfqr": 2,
+                        "nsfzx": 1,
+                        "toName": "王晓梅"
+                    },
+                    {
+                        "cgxmc": "夫",
+                        "fromName": "李大坑",
+                        "ngxbh": 11,
+                        "ngxlydw": 1013,
+                        "ngxzxd": 0,
+                        "nsfqr": 2,
+                        "nsfzx": 1,
+                        "toName": "王晓梅"
+                    },
+                    {
+                        "cgxmc": "妻",
+                        "fromName": "王晓梅",
+                        "ngxbh": 12,
+                        "ngxlydw": 1013,
+                        "ngxzxd": 0,
+                        "nsfqr": 2,
+                        "nsfzx": 1,
+                        "toName": "李大坑"
+                    }
+                ],
+                "fathers": [],
+                "grantChildren": [],
+                "grantFathers": [],
+                "grantMothers": [],
+                "gxPath": "1|12",
+                "mothers": [],
+                "nxb": 2,
+                "nxl": -1,
+                "nzjlx": 100,
+                "siblings": [],
+                "spouses": []
+            }
+        ]
+    },
+    "success": true,
+    "message": "成功"
+}
