@@ -276,7 +276,6 @@
                 <version>2.2</version>
                 <configuration>
                     <warSourceDirectory>${basedir}/web</warSourceDirectory>
-                    <version>3.0</version>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>

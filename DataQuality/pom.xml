@@ -110,7 +110,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.thunisoft.data.quality.Main</mainClass>
+                            <mainClass>orz.anzhy.data.quality.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
