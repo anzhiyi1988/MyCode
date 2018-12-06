@@ -2,7 +2,7 @@ package orz.anzhy.sffx.monitor.dao;
 
 import org.junit.Test;
 
-import com.thunisoft.sffx.monitor.bean.Server;
+import orz.anzhy.sffx.monitor.bean.Server;
 
 public class ServerDaoTest {
 
