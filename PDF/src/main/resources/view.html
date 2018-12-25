@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="pdf.js"></script>
+    <script src="view.js"></script>
+    <script src="pdf.worker.js"></script>
+</head>
+<body>
+<div>
+    <button onclick="scalePlus">放大</button>
+    <button onclick="scaleReduce">缩小</button>
+    <button onclick="pageActual">实际大小</button>
+    <!--  <button onclick="pageWidth">适应页宽</button>
+      <button onclick="page-height">适应页高</button>
+      <button onclick="rotateReverse">左旋</button>
+      <button onclick="rotateOrder">右旋</button>-->
+    跳转页码：<input type="number" onblur="renderPage(1)"> <br>
+
+
+</div>
+<h1>'Hello, world!' example</h1>
+
+<canvas id="pdf-canvas" style="border:1px  solid black"></canvas>
+
+</body>
+</html>
