@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <context:annotation-config/>
+
+
+    <bean id="son" class="orz.an.study.spring.aop.Son"/>
+    <bean id="mum" class="orz.an.study.spring.aop.Mum"/>
+
+    <aop:config>
+        <aop:aspect id="myAspect" ref="mum">
+            <aop:pointcut id="cut" expression="execution(* orz.an.study.spring.aop.Son.play(..))"/>
+            <aop:pointcut id="cut2" expression="execution(* orz.an.study.spring.aop.Son.study(..))"/>
+            <aop:before pointcut-ref="cut,cut2" method="before"/>
+            <aop:after-returning pointcut-ref="cut" returning="retVal" method="afterReturn" />
+            <aop:after-throwing pointcut-ref="cut"  throwing="ex" method="afterEx"/>
+            <aop:after pointcut-ref="cut" method="after"/>
+            <aop:around pointcut-ref="cut" method="around"/>
+        </aop:aspect>
+    </aop:config>
+
+
+</beans>
