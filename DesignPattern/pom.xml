@@ -4,13 +4,32 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>orz.an.design.pattern</groupId>
-    <artifactId>boot</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>boot</artifactId>    
     <version>1.0</version>
-    <modules>
-        <module>01base</module>
-        <module>02singleton</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId></groupId>
+            <artifactId></artifactId>
+        </dependency>
+
+
+
+
+    </dependencies>
 
 
 </project>
