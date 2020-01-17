@@ -4,6 +4,7 @@ import org.junit.Test;
 import orz.anzhy.cut.DynamicBottomUp;
 import orz.anzhy.cut.DynamicBottomUpExtended;
 import orz.anzhy.cut.Recursion;
+import orz.anzhy.search.BinarySearch;
 import orz.anzhy.selector.Greedy;
 import orz.anzhy.sort.*;
 
@@ -102,5 +103,12 @@ public class MyTest {
         Greedy greedy = new Greedy();
         System.out.println(greedy.greedy(s, f));
 
+    }
+
+
+    @Test
+    public void testBinarySearch() {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println(BinarySearch.search(arr, 0));
     }
 }

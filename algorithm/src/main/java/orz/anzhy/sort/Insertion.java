@@ -1,5 +1,8 @@
 package orz.anzhy.sort;
 
+/**
+ * 插入排序
+ */
 public class Insertion {
 
 

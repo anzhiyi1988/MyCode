@@ -1,5 +1,8 @@
 package orz.anzhy.sort;
 
+/**
+ * 归并排序
+ */
 public class Merge {
 
 

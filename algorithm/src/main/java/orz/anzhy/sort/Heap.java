@@ -2,6 +2,9 @@ package orz.anzhy.sort;
 
 import java.util.Arrays;
 
+/**
+ * 堆排序
+ */
 public class Heap {
 
     // 调整，小数下沉

@@ -1,5 +1,10 @@
 package orz.anzhy.sort;
 
+/**
+ *
+ * 冒泡排序
+ *
+ */
 public class Bubble {
 
     public void sort(int a[]) {
