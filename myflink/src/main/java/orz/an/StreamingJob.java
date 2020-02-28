@@ -18,6 +18,7 @@
 
 package orz.an;
 
+import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
@@ -38,6 +39,9 @@ public class StreamingJob {
 		// set up the streaming execution environment
 		final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
+        DataStream<String> text = env.readTextFile("H:/logs/172.16.34.82-20191222000001.log");
+
+        text.writeAsText("H:/logs/anzhy");
 		/*
 		 * Here, you can start creating your execution plan for Flink.
 		 *
