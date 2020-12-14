@@ -1,0 +1,260 @@
+{
+    "description": "监督对象基本信息",
+    "items": {
+        "type": "object",
+        "required": [
+            "jddxbs",
+            "xm",
+            "xb",
+            "csrq",
+            "zp",
+            "mz",
+            "jg",
+            "csd",
+            "zzmm",
+            "dp",
+            "dedp",
+            "rdsj",
+            "cjgzsj",
+            "jkzk",
+            "zyjszw",
+            "sxzyzc",
+            "xl",
+            "xw",
+            "byyx",
+            "gzdw",
+            "xrzw",
+            "zj",
+            "gbglqx",
+            "jcdxlx",
+            "zjlx",
+            "sfzh",
+            "lxdh",
+            "sfyx",
+            "wxyylx",
+            "qtyy",
+            "ssjjjcjg",
+            "ssjjjcjgjdjcbm",
+            "ssjjjcjgpzjg",
+            "rzdqdm",
+            "rzdq",
+            "cbdw",
+            "sjlydqdm",
+            "sjlydq",
+            "sjlydw"
+        ],
+        "properties": {
+            "csrq": {
+                "format": "date",
+                "description": "出生日期",
+                "type": "string"
+            },
+            "jkzk": {
+                "description": "健康状况",
+                "type": "string",
+                "maxLength": 1
+            },
+            "ssjjjcjgjdjcbm": {
+                "description": "所属纪检监察机构监督检查部门",
+                "type": "string",
+                "maxLength": 12
+            },
+            "zjlx": {
+                "description": "证件类型",
+                "type": "string",
+                "maxLength": 4
+            },
+            "cjgzsj": {
+                "format": "date",
+                "description": "参加工作时间",
+                "type": "string"
+            },
+            "sfyx": {
+                "description": "是否有效",
+                "type": "string",
+                "maxLength": 1
+            },
+            "dp": {
+                "description": "党派",
+                "enum": [
+                    "10",
+                    "20",
+                    "30"
+                ]
+            },
+            "jddxbs": {
+                "description": "监督对象标识",
+                "type": "string",
+                "maxLength": 32
+            },
+            "zyjszw": {
+                "description": "专业技术职务",
+                "type": "string",
+                "maxLength": 100
+            },
+            "xrzw": {
+                "description": "现任职务",
+                "type": "string",
+                "maxLength": 100
+            },
+            "ssjjjcjgpzjg": {
+                "description": "所属纪检监察机构派驻机构",
+                "type": "string",
+                "maxLength": 12
+            },
+            "byyx": {
+                "description": "毕业院校",
+                "type": "string",
+                "maxLength": 200
+            },
+            "zzmm": {
+                "description": "政治面貌",
+                "enum": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            "sxzyzc": {
+                "description": "熟悉专业专长",
+                "type": "string",
+                "maxLength": 100
+            },
+            "cbdw": {
+                "description": "呈报单位",
+                "type": "string",
+                "maxLength": 200
+            },
+            "jcdxlx": {
+                "description": "监察对象类型",
+                "type": "string",
+                "maxLength": 3
+            },
+            "rzdq": {
+                "description": "任职地区",
+                "type": "string",
+                "maxLength": 300
+            },
+            "lxdh": {
+                "description": "联系电话",
+                "type": "string",
+                "maxLength": 100
+            },
+            "dedp": {
+                "description": "第二党派",
+                "enum": [
+                    "10",
+                    "20",
+                    "30"
+                ]
+            },
+            "sjlydqdm": {
+                "description": "数据来源地区代码",
+                "type": "string",
+                "maxLength": 12
+            },
+            "wxyylx": {
+                "description": "无效原因类型",
+                "type": "string",
+                "maxLength": 1
+            },
+            "xb": {
+                "description": "性别",
+                "type": "string",
+                "maxLength": 1
+            },
+            "ssjjjcjg": {
+                "description": "所属纪检监察机构",
+                "type": "string",
+                "maxLength": 12
+            },
+            "mz": {
+                "description": "民族",
+                "enum": [
+                    "a",
+                    "b",
+                    "c"
+                ]
+            },
+            "zj": {
+                "description": "职级",
+                "type": "string"
+            },
+            "rzdqdm": {
+                "description": "任职地区代码",
+                "type": "string",
+                "maxLength": 12
+            },
+            "sjlydw": {
+                "description": "数据来源单位",
+                "type": "string",
+                "maxLength": 200
+            },
+            "xl": {
+                "description": "学历",
+                "enum": [
+                    "01",
+                    "02",
+                    "03"
+                ]
+            },
+            "sfzh": {
+                "description": "证件号码",
+                "type": "string",
+                "maxLength": 50
+            },
+            "sjlydq": {
+                "description": "数据来源地区",
+                "type": "string",
+                "maxLength": 100
+            },
+            "xm": {
+                "description": "姓名",
+                "type": "string",
+                "maxLength": 100
+            },
+            "csd": {
+                "description": "出生地",
+                "type": "string",
+                "maxLength": 300
+            },
+            "zp": {
+                "description": "照片",
+                "type": "string"
+            },
+            "gzdw": {
+                "description": "工作单位",
+                "type": "string",
+                "maxLength": 200
+            },
+            "qtyy": {
+                "description": "其他原因",
+                "type": "string",
+                "maxLength": 100
+            },
+            "rdsj": {
+                "format": "date",
+                "description": "入党时间",
+                "type": "string"
+            },
+            "jg": {
+                "description": "籍贯",
+                "type": "string",
+                "maxLength": 300
+            },
+            "xw": {
+                "description": "学位",
+                "type": "string",
+                "maxLength": 3
+            },
+            "gbglqx": {
+                "description": "干部管理权限",
+                "type": "string",
+                "maxLength": 1
+            }
+        }
+    },
+    "schema": "http://json-schema.org/draft-07/schema#",
+    "title": "监督对象基本信息",
+    "type": "array"
+}
