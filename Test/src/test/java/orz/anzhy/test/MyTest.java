@@ -181,4 +181,13 @@ public class MyTest {
 
     }
 
+    @Test
+    public void strContent(){
+
+        System.out.println( StringUtils.containsAny("edit","edit","merge") );
+        System.out.println( StringUtils.containsAny("merge","edit","merge") );
+        System.out.println( StringUtils.containsAny("del","edit","merge") );
+
+    }
+
 }
