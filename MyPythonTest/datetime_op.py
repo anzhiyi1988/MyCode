@@ -5,6 +5,33 @@ import datetime
 import pandas as pd
 import pytz
 
+"""
+计算未来12个月
+"""
+curr_date = datetime.datetime.strptime("2020-09-22", "%Y-%m-%d")
+
+
+def print_future(curr_date):
+    print(curr_date)
+    print(curr_date + datetime.timedelta(days=28))
+    print(curr_date + datetime.timedelta(days=58))
+    print(curr_date + datetime.timedelta(days=88))
+    print(curr_date + datetime.timedelta(days=118))
+    print(curr_date + datetime.timedelta(days=148))
+    print(curr_date + datetime.timedelta(days=178))
+    print(curr_date + datetime.timedelta(days=208))
+    print(curr_date + datetime.timedelta(days=238))
+    print(curr_date + datetime.timedelta(days=268))
+    print(curr_date + datetime.timedelta(days=298))
+    print(curr_date + datetime.timedelta(days=328))
+print_future(datetime.datetime.strptime("2020-01-01", "%Y-%m-%d"))
+print('--------------------')
+print_future(datetime.datetime.strptime("2020-02-01", "%Y-%m-%d"))
+print('--------------------')
+print_future(datetime.datetime.strptime("2020-03-01", "%Y-%m-%d"))
+
+exit()
+
 
 # ----------------------------------------------------------------------------------------------------------------------
 def date_convert(o_date_str):
@@ -160,4 +187,3 @@ print(df1)
 
 print(df1[df1['days'].dt.days > 0])
 # ----------------------------------------------------------------------------------------------------------------------
-

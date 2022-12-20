@@ -37,23 +37,26 @@ print('========================start')
 print(df2)
 
 print('========================')
-isNan = df2.cl2.notna()
+isNan = df2.cl2.isna()
 print(isNan)
 
 
-print('========================1,原值改变，为啥')
-df2.loc[isNan, 'cl3'] = df2[isNan]['cl2']
-print(df2)
+# print('========================1,原值改变，为啥')
+# df2.loc[isNan, 'cl3'] = df2[isNan]['cl2']
+# print(df2)
 
 # print('========================2,原值改变,同1一样，为啥')
 # df2.loc[~isNan, 'cl3'] = df2.loc[~isNan, 'cl2']
 # print(df2)
 
-# print('========================3,原值不变')
-# df2[~isNan]['cl3'] = df2.loc[~isNan, 'cl2']
-# print(df2)
+print('========================3,原值不变')
+df2[~isNan]['cl3'] = df2.loc[~isNan, 'cl2']
+print(df2)
 
 # print('========================4,原值不变')
 # df2[~isNan]['cl3'] = df2[~isNan]['cl2']
 # print(df2)
 
+
+# 多列复制
+# result[["statistical_month", "month_stock_amount"]] = result.apply(self.month_stock, axis=1).apply(pd.Series)
