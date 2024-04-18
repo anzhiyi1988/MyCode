@@ -16,7 +16,8 @@ data = [
     {'col1': 'a', 'col2': 'b'}
 ]
 
-cols = ['col1', 'col2', 'col3']
+# cols = ['col1', 'col2', 'col3']
+cols = ['col1','col3']
 df1 = pd.DataFrame(data, columns=cols)
 print('========================start')
 print(df1)

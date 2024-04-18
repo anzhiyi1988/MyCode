@@ -17,3 +17,6 @@ target
 logs
 /spring/out
 .DS_Store
+/MyPythonTest/test_str_split.py
+/MyPythonTest/can_not_commit/*
+
